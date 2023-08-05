@@ -9,7 +9,7 @@ jobs:
 
         steps:
             - uses: actions/checkout@v3
-            - name: precursor
+            - name: use precursor branch
               run: git checkout -B precursor
-            - name: precursor
-              run: git branch --show-current
+            - name: update branch content
+              run: git reset --hard main
