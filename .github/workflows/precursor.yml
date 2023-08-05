@@ -4,9 +4,10 @@ on:
             - main
 
 jobs:
-    print-username:
+    precursor:
         runs-on: ubuntu-latest
 
         steps:
-            - name: Print the input name to STDOUT
+            - uses: actions/checkout@v3
+            - name: precursor
               run: echo The username is ${{ inputs.username }}
