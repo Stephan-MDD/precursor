@@ -13,3 +13,5 @@ jobs:
               run: git checkout -B precursor
             - name: update branch content
               run: git reset --hard main
+            - name: push upstream
+              run: git push --set-upstream origin precursor
