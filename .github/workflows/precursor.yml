@@ -1,12 +1,12 @@
 on:
-	push:
-		branches:
-			- main
+    push:
+        branches:
+            - main
 
 jobs:
-	log:
-		runs-on: ubuntu-latest
+    print-username:
+        runs-on: ubuntu-latest
 
-		steps:
-			- uses: actions/checkout@v3
-			- run: echo 'hello precursor'
+        steps:
+            - name: Print the input name to STDOUT
+              run: echo The username is ${{ inputs.username }}
