@@ -10,4 +10,6 @@ jobs:
         steps:
             - uses: actions/checkout@v3
             - name: precursor
+              run: git checkout precursor
+            - name: precursor
               run: git branch --show-current
