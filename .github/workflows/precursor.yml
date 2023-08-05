@@ -9,6 +9,8 @@ jobs:
 
         steps:
             - uses: actions/checkout@v3
+              with:
+                  token: ${{secrets.PAT}}
             - name: use precursor branch
               run: git checkout -B precursor
             - name: update branch content
